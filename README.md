@@ -2,7 +2,7 @@
 
 # delay-proxy
 
-An HTTP proxy that introduces network delays to the response from the server.
+An HTTP proxy that introduces network delays to the response from a server.
 
 The network delays (in milliseconds) follow a random [Gamma distribution](https://en.wikipedia.org/wiki/Gamma_distribution) with parameters `alpha` and `beta`. 
 
@@ -27,7 +27,7 @@ run-delay-proxy port server alpha beta randomseed [buffsize]
 ## Example of Usage
 
 In the following example, the proxy listens in the port `8005` and contacts the server `http://127.0.0.1:5000/db`. 
-The response from the server is sent to the client with network delays (in milliseconds) that follow a Gamma distribution with parameters `alpha = 200` and `beta = 40`.  
+The response from the server is sent to the client with network delays (in milliseconds) that follow a Gamma distribution with parameters `alpha = 10` and `beta = 3.0`.  
 
 ```
 # Delaying the answer from a server. 

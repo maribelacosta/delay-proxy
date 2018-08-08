@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/144040707.svg)](https://zenodo.org/badge/latestdoi/144040707)
+
 # delay-proxy
 
 An HTTP proxy that introduces network delays to the response from the server.

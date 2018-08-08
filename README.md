@@ -2,7 +2,7 @@
 
 An HTTP proxy that introduces network delays to the response from the server.
 
-The network delays (in miliseconds) follow a random [Gamma distribution](https://en.wikipedia.org/wiki/Gamma_distribution) with parameters `alpha` and `beta`. 
+The network delays (in milliseconds) follow a random [Gamma distribution](https://en.wikipedia.org/wiki/Gamma_distribution) with parameters `alpha` and `beta`. 
 
 ## Download and Install
 Download or clone this repository. Execute the following command in the `delay-proxy` folder. 

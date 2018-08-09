@@ -16,18 +16,19 @@ Download or clone this repository. Execute the following command in the `delay-p
 ## Parameters
 ```
 run-delay-proxy port server alpha beta randomseed [buffsize]
-	 port 		Listening port for the proxy (int)
-	 server 	Ip address and port of the server (ip:port)
-	 alpha 		Alpha parameter for gamma distribution (int)
-	 beta 		Beta parameter for gamma distribution (float)
-	 randomseed 	Seed for the delays in the proxy (int)
-	 buffsize 	Buffersize that specifies the size of the data chunks sent to the client (int)
 ```
+
+- `port`: Listening port for the proxy (int).
+- `server`: IP address and port of the server (ip:port).
+- `alpha`: Alpha parameter for gamma distribution (int).
+- `beta`: Beta parameter for gamma distribution (float).
+- `randomseed`: Seed for the delays in the proxy (int). Using the same seed allows to reproduce the sequence of delays. 
+- `buffsize`:  Buffersize that specifies the size of the data chunks sent to the client (int).
 
 ## Example of Usage
 
 In the following example, the proxy listens in the port `8005` and contacts the server `http://127.0.0.1:5000/db`. 
-The response from the server is sent to the client with network delays (in milliseconds) that follow a Gamma distribution with parameters `alpha = 10` and `beta = 3.0`. The seed used for generating the delays is `1` 
+The response from the server is sent to the client with network delays (in milliseconds) that follow a Gamma distribution with parameters `alpha = 10` and `beta = 3.0`. The seed used for generating the delays is `1`. 
 
 ```
 # Delaying the answer from a server. 

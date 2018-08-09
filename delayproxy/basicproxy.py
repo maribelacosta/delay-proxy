@@ -40,12 +40,11 @@ class ProxyHandler (BaseHTTPServer.BaseHTTPRequestHandler):
         self.server = ProxyHandler.server
         self.alpha = ProxyHandler.alpha
         self.beta = ProxyHandler.beta
-        self.seed = ProxyHandler.seed
         self.rbufsize = ProxyHandler.rbufsize
 
         # Set the random seed for delays.
-        self.seed = self.seed + 1
-        random.seed(self.seed)
+        ProxyHandler.seed = ProxyHandler.seed + 1
+        random.seed(ProxyHandler.seed)
         
         # Handle the connection.
         self.__base_handle()           

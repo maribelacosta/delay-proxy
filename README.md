@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/144040707.svg)](https://zenodo.org/badge/latestdoi/144040707)
+[![PyPI version](https://badge.fury.io/py/delay-proxy.svg)](https://badge.fury.io/py/delay-proxy)
 
 # delay-proxy
 

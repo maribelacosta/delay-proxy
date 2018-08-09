@@ -2,7 +2,7 @@
 
 # delay-proxy
 
-An HTTP proxy that introduces network delays to the response from a server.
+An HTTP proxy in Python 2 that introduces network delays to the response from a server.
 
 The network delays (in milliseconds) follow a random [Gamma distribution](https://en.wikipedia.org/wiki/Gamma_distribution) with parameters `alpha` and `beta`. 
 

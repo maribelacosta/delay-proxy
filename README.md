@@ -13,7 +13,8 @@ Download or clone this repository. Execute the following command in the `delay-p
 [sudo] python setup.py install
 ```
 
-## Parameters
+## Execution and Parameters
+To start a proxy, execute the following command: 
 ```
 run-delay-proxy port server alpha beta randomseed [buffsize]
 ```

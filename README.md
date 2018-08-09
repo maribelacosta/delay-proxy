@@ -27,18 +27,18 @@ run-delay-proxy port server alpha beta randomseed [buffsize]
 ## Example of Usage
 
 In the following example, the proxy listens in the port `8005` and contacts the server `http://127.0.0.1:5000/db`. 
-The response from the server is sent to the client with network delays (in milliseconds) that follow a Gamma distribution with parameters `alpha = 10` and `beta = 3.0`.  
+The response from the server is sent to the client with network delays (in milliseconds) that follow a Gamma distribution with parameters `alpha = 10` and `beta = 3.0`. The seed used for generating the delays is `1` 
 
 ```
 # Delaying the answer from a server. 
-run-delay-proxy 8005 http://127.0.0.1:5000/db 10 3.0 
+run-delay-proxy 8005 http://127.0.0.1:5000/db 10 3.0 1
 ```
 
 In the following example, the answer from the server is partitioned in chunks of size `1024` characters. 
 Each chunk from the server is sent to the client with the network delays as specified in the previous example. 
 ```
 # Delaying chunks of the answer from a server. 
-run-delay-proxy 8005 http://127.0.0.1:5000/db 10 3.0 1024 
+run-delay-proxy 8005 http://127.0.0.1:5000/db 10 3.0 1 1024 
 ```
 
 ## How to Cite
